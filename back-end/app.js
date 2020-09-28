@@ -6,6 +6,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const db = require('./config/database')
+//db('mongodb+srv://caiofloroads:<password>@cluster0.bx6mz.gcp.mongodb.net/db_projetoweb?retryWrites=true&w=majority')
+
 var app = express();
 
 app.use(logger('dev'));
