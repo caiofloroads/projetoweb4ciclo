@@ -4,15 +4,15 @@ const esquema = mongoose.Schema({
     nome: {
         type: String,
         required: true //Atributo obrigatorio
-    }
+    },
     telefone: {
         type: String,
         required: true
-    }
+    },
     endereco: {
         type: String,
         required: true
-    }
+    },
     funcao: {
         type: String,
         required: true,
@@ -20,4 +20,4 @@ const esquema = mongoose.Schema({
     }
 })
 
-module.exports mongoose.model('Funcionario', esquema, 'funcionarios')
+module.exports = mongoose.model('Funcionario', esquema, 'funcionarios')

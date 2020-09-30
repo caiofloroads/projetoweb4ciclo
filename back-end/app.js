@@ -27,4 +27,8 @@ app.use('/users', usersRouter);
 const teste = require('./routes/teste')
 app.use('/teste', teste)
 
+//ROTA PARA FUNCIONARIO
+const funcionario = require('./routes/funcionario')
+app.use('/funcionario', funcionario)
+
 module.exports = app;
