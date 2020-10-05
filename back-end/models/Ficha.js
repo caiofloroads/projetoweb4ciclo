@@ -8,7 +8,7 @@ const esquema = mongoose.Schema({
     },
     produto: {
         type: mongoose.ObjectId,
-        ref: 'Produto ',
+        ref: 'Produto',
         required: true
     },
     qtde_pecas: {
