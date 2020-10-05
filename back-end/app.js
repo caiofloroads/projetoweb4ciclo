@@ -45,7 +45,7 @@ app.use('/venda', venda)
 
 
 //ROTA PARA PAGAMENTO
-const pagamendo = require('./routes/pagamento')
-app.use('/venda', pagamento)
+const pagamento = require('./routes/pagamento')
+app.use('/pagamento', pagamento)
 
 module.exports = app;
