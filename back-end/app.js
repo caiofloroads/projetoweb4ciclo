@@ -31,4 +31,21 @@ app.use('/teste', teste)
 const funcionario = require('./routes/funcionario')
 app.use('/funcionario', funcionario)
 
+//ROTA PARA PRODUTO
+const produto = require('./routes/produto')
+app.use('/produto', produto)
+
+//ROTA PARA FICHA
+const ficha = require('./routes/ficha')
+app.use('/ficha', ficha)
+
+//ROTA PARA VENDA
+const venda = require('./routes/venda')
+app.use('/venda', venda)
+
+
+//ROTA PARA PAGAMENTO
+const pagamendo = require('./routes/pagamento')
+app.use('/venda', pagamento)
+
 module.exports = app;

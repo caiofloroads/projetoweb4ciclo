@@ -5,6 +5,11 @@ const esquema = mongoose.Schema({
         type: String,
         required: true //Atributo obrigatorio
     },
+    cpf: {
+        type: String,
+        required: true,
+        index: { unique: true}
+    },
     telefone: {
         type: String,
         required: true
