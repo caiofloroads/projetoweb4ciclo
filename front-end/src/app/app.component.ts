@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <app-main-toolbar></app-main-toolbar>
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
       <h1>
@@ -23,10 +24,13 @@ import { Component } from '@angular/core';
         <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
       </li>
     </ul>
+    <div class="content">
     <router-outlet></router-outlet>
+    </div>
+    <app-main-footer></app-main-footer>
   `,
   styles: []
 })
 export class AppComponent {
-  title = 'front-end';
+  title = 'Mestre Couros';
 }
